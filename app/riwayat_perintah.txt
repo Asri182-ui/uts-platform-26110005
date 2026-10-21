@@ -1,0 +1,10 @@
+   20  history | tail -n 10 | tac > riwayat_perintah.txt
+   19  cd ~/uts_platform/app
+   18  ls ~/uts_platform
+   17  mkdir -p ~/uts_platform/{app,config,logs,screenshots}
+   16  docker run hello-world
+   15  docker run hello-word
+   14  docker compose version
+   13  docker run hello-word
+   12  docker --version
+   11  sudo service docker start
