@@ -1,0 +1,30 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:8000"
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_USER: root
+      DB_PASSWORD: rootpass
+      DB_NAME: bukutamu
+    networks:
+      - bukutamu-net
+
+  db:
+    image: mariadb:10.11
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: bukutamu
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - bukutamu-net
+
+volumes:
+  db_data:
+
+networks:
+  bukutamu-net:
