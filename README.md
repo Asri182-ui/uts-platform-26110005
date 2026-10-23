@@ -1,7 +1,7 @@
-a# Buku Tamu Digital
+# Buku Tamu Digital
 
-- **Nama**: Mayalina Dewita Alnabe
-- **NIM**: 26110008
+- **Nama**: Asri Roy Bako
+- **NIM**: 26110005
 
 ## Deskripsi Proyek
 
